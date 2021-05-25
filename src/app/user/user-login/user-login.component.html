@@ -4,7 +4,7 @@
     </header>
     <section id="login-form">
         <div class="container">
-            <h3 class="login-page-heading">Registered customers</h3>
+            <h3 class="login-page-heading">Registered Customers</h3>
             <div class="form">
                 <div class="form-group">
                     <input type="text" name="username" class="form-control" id="email" placeholder="Email / Phone number*  ">
@@ -12,13 +12,14 @@
                 <div class="form-group">
                     <input type="password" name="password" class="form-control" id="password" placeholder="Password">
                 </div>
-                    
-                <button type="submit" class="login-button">Login</button>
                 <div class="forgot-password">
                     <a href="#" class="text-center">Forgot your password?</a>
                 </div>
+                <a routerLink="login/"> 
+                <button type="submit" class="login-button">Login</button>
+                </a>
                 <div class="register-now">
-                    <a href="#" class="text-center">New user? Register Now</a>
+                    <a [routerLink]="['/register']" class="text-center">New user? Register Now</a>
                 </div>
             </div>
         </div>
